@@ -4,6 +4,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
+import LanguageSwitch from './LanguageSwitch';
+import { FormattedMessage } from 'react-intl';
 
 const App = () => {
   const { defaultLanguage } = useContext(LanguageContext);
@@ -12,19 +14,20 @@ const App = () => {
     <Navbar bg='light' expand='lg'>
       <Container>
         <Link className='navbar-brand' to='/'>
-          Multi Language React
+          <FormattedMessage id='website-name' />
         </Link>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='ms-auto'>
             <Link to='/' className='nav-link'>
-              Home
+              <FormattedMessage id='nav-home' />
             </Link>
             <Link to='/about' className='nav-link'>
-              About Us
+              <FormattedMessage id='nav-about' />
             </Link>
           </Nav>
         </Navbar.Collapse>
+        <LanguageSwitch />
       </Container>
     </Navbar>
   );

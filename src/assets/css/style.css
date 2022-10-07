@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali&family=Nunito&family=Tiro+Bangla&display=swap');
+
+body {
+  font-family: 'Nunito', 'Tiro Bangla', sans-serif;
+  /* font-family: 'Nunito', 'Noto Serif Bengali', sans-serif; */
+}
