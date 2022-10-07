@@ -1,4 +1,5 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 
 const About = () => {
   return (
@@ -6,7 +7,9 @@ const About = () => {
       <div className='container'>
         <div className='row'>
           <div className='col-md-12'>
-            <h1>About Us</h1>
+            <h1>
+              <FormattedMessage id='aboutPageTitle' />
+            </h1>
           </div>
         </div>
       </div>
