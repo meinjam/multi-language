@@ -1,6 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali&family=Nunito&family=Tiro+Bangla&display=swap');
+@font-face {
+  font-family: 'SolaimanLipi';
+  src: url('../fonts/SolaimanLipi.ttf');
+}
+
+@font-face {
+  font-family: 'Operator Mono';
+  src: url('../fonts/OperatorMono-Book.otf');
+}
 
 body {
-  font-family: 'Nunito', 'Tiro Bangla', sans-serif;
-  /* font-family: 'Nunito', 'Noto Serif Bengali', sans-serif; */
+  font-family: 'Operator Mono', 'SolaimanLipi', sans-serif;
 }
