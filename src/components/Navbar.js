@@ -1,5 +1,4 @@
-import React, { useContext } from 'react';
-import LanguageContext from '../context/LanguageContext';
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -8,8 +7,6 @@ import LanguageSwitch from './LanguageSwitch';
 import { FormattedMessage } from 'react-intl';
 
 const App = () => {
-  const { defaultLanguage } = useContext(LanguageContext);
-
   return (
     <Navbar bg='light' expand='lg'>
       <Container>

@@ -5,9 +5,32 @@
 
 @font-face {
   font-family: 'Operator Mono';
-  src: url('../fonts/OperatorMono-Book.otf');
+  /* src: url('../fonts/OperatorMono-Book.otf'); */
+  src: url('../fonts/Nunito-Medium.ttf');
 }
 
 body {
   font-family: 'Operator Mono', 'SolaimanLipi', sans-serif;
+}
+
+.language-checkbox {
+  margin-left: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-brand {
+    order: 1;
+  }
+
+  .language-checkbox {
+    order: 2;
+  }
+
+  .navbar-toggler {
+    order: 3;
+  }
+
+  .navbar-collapse {
+    order: 4;
+  }
 }
